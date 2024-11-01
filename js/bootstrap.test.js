@@ -16,7 +16,7 @@ describe("Username validation", () => {
 
     document.getElementById("username").addEventListener("input", function () {
       var username = document.getElementById("username").value;
-      var regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+      var regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*~])(?=.{8,})/;
       if (regex.test(username)) {
         document.getElementById("username").style.borderColor = "green";
       } else {
